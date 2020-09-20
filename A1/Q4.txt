@@ -1,0 +1,6 @@
+Literals:-
+  2
+  2000
+ Variables:-
+  little
+  big
