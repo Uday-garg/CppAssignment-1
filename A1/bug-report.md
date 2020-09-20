@@ -45,5 +45,5 @@ cout << "The value of c is " << c;
 
 6. **What is the take-away message from this bug?**
 
- The take away is that I always have to remember to put closing brckets.
+ The take away is that I always have to remember to put closing brackets.
 
