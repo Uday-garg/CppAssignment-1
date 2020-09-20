@@ -3,92 +3,46 @@
 1. **The incorrect original code or code snippit that you wrote:**
 
 ``` cpp
-//code with bugs or code snippet with bug goes here
 
-//sample code
-
-// Online C++ compiler to run C++ online.
-// Write C++ code in this online editor and run it.
-
-#include <iostream>
-
-int main() {
-    std:cout << "Hello World!";
-  
-  return 0;
+*/ What's wrong with this program? /*
+#include iostream
+using namespace std;
+int main();
 }
+int a, b, c \\ Three integers
+a = 3
+b = 4
+c = a + b
+Cout < "The value of c is %d" < C;
+
 
 ```
 
 2. **What bug does the original code have?**
-
+    It was not a bug, this is Q15 and it took me 5 mins to figure it out
   
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
-
+    I did not know about the last "}" is necessary
 4. **How to correct the bug?**
-
+http://cpp.sh/4o7u6y
+I used online visualizer tool to check my corrected code 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
-bug-free code or code snippet goes here
+```cpp
+// What's wrong with this program? 
+#include <iostream>
+using namespace std;
+int main()
+{
+int a = 3;
+int b = 4;
+int c = a + b;
+cout << "The value of c is " << c;
 
 ```
 
 6. **What is the take-away message from this bug?**
 
----
+--- The tske away is that I always have to remember to put closing brckets.
 
-# Bug 2
-
-1. **The incorrect original code or code snippit that you wrote:**
-
-```
-code with bugs or code snippet with bug goes here
-
-```
-
-2. **What bug does the original code have?**
-
-  
-
-3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
-
-4. **How to correct the bug?**
-
-5. **The corresponding bug-free code or code snippet is:**
-
-```
-bug-free code or code snippet goes here
-
-```
-
-6. **What is the take-away message from this bug?**
-
----
-
-# Bug 3
-
-1. **The incorrect original code or code snippit that you wrote:**
-
-```
-code with bugs or code snippet with bug goes here
-
-```
-
-2. **What bug does the original code have?**
-
-  
-
-3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
-
-4. **How to correct the bug?**
-
-5. **The corresponding bug-free code or code snippet is:**
-
-```
-bug-free code or code snippet goes here
-
-```
-
-6. **What is the take-away message from this bug?**
