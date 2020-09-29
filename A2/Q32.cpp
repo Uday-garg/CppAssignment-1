@@ -21,6 +21,6 @@ switch (selection) {
       break;
     default:
       cout << "The choices were only '0' and '1'.";
-
+      break;
 }
 }
