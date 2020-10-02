@@ -57,7 +57,7 @@ int main()
 			 << endl << endl << endl;
        average_calc2 = average;
     
-    cout << "The average of  majority of hours spent by by student "
+    cout << "The average of number of hours spent by by student "
 				 << student << " on ";
          if (average_calc1 > average_calc2)
           cout << "programming";
