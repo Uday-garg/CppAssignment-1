@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	int numStudents;
-	float numHours, total, average;
+	float numHours, total, average, average_calc1, average_calc2;
 	int student, day = 0, total_days;	// these are the counters for the loops
 
 	cout << "This program will find the average number of hours a day"
@@ -36,6 +36,7 @@ int main()
 		cout << "The average number of hours per day spent programming by "
 			 << "student " << student << " is " << average
 			 << endl << endl << endl;
+       average_calc1 = average;
 
 //**************************************************************
       total = 0;
@@ -54,6 +55,15 @@ int main()
 		cout << "The average number of hours per day spent studying biology by "
 			 << "student " << student << " is " << average
 			 << endl << endl << endl;
+       average_calc2 = average;
+    
+    cout << "The average of  majority of hours spent by by student "
+				 << student << " on ";
+         if (average_calc1 > average_calc2)
+          cout << "programming";
+            else
+            cout << "biology";
+          cout << " is greater by " << abs(average_calc1 - average_calc2) << " hour(s).";
 	}
 
 	return 0;
