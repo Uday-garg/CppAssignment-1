@@ -1,42 +1,28 @@
-// For every word in the sentence, the first letter is relocated the end of the word
-// All letters in the output are uppercase.
-// The string "KPU" is added to every word
-
-
-
 #include <iostream>
 #include <string>
 using namespace std;
 
-void convert (string& y)
+void convert (string& c)
 {
-    for (int a = 0; a < y.length(); a++)
-        y[a] = toupper(y[a]);
+    for (int word = 0; word < c.length(); word++)
+        c[word] = toupper(c[word]);
     }
 int main()
 {
-  int x, i;
-  string y, sentence = "", z = "KPU";
+  int output, i; //i is used as an incriment
+  string c, sentence = "", k = "KPU";
    cout << "Type the number of words your sentence is gonna have. \n\n";
-   cin >> x;
-   if (x <= 0)
-   {
-       cout << "please follow the instructions mentioned above \n\n";
-       }
-
-   else
-   {
-       for (i = 1; i <= x; i++)
-       {
-           cout << "enter the word number " << i << "\n";
-           cin >> y;
-           convert(y);
-           sentence = sentence + " " + y.erase(0,1) + y[0] + z;
-           }
-           cout << "accoding to the question, the desired sentence is: \n " << sentence;
-       }
-   
-   
-   
+   cin >> output;
+   if (output < 0)
+    cout << "Please follow the instructions mentioned above \n\n";
+    else
+      for (i = 1; i <= output; i++)
+      {
+        cout << "Please enter the original sentence word by word without spaces: " << i << "\n";
+        cin >> c;
+        convert(c);
+        sentence = sentence + " " + c.erase(0,1) + c[0] + k;
+      }
+        cout << "Accoding to what you have entered, the suntence will be: \n " << sentence;
    return 0;
    }
