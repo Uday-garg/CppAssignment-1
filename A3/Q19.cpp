@@ -1,4 +1,4 @@
-  // Arnav Bhalla
+//Arnav Bhalla
 #include <iostream>
 using namespace std;
 
@@ -56,13 +56,17 @@ int main()
 			 << "student " << student << " is " << average
 			 << endl << endl << endl;
        average_calc2 = average;
-    
-    cout << "The average of number of hours spent by by student "
+    if (average_calc1 == average_calc2){
+              cout << "Both the subects are equally studied by the student.";
+              break;}
+      else
+      cout << "The average of number of hours spent by by student "
 				 << student << " on ";
          if (average_calc1 > average_calc2)
           cout << "programming";
             else
             cout << "biology";
+            
           cout << " is greater by " << abs(average_calc1 - average_calc2) << " hour(s).";
 	}
 
