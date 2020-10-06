@@ -289,36 +289,31 @@ int main()
 
 ```
 #include <iostream>
-#include <string>
+
 using namespace std;
 
-void convert (string& c)
-{
-    for (int word = 0; word < c.length(); word++)
-        c[word] = toupper(c[word]);
-    }
 int main()
 {
-  int output, i; //i is used as an incriment
-  string c, sentence = "", k = "KPU";
-   cout << "Type the number of words your sentence is gonna have. \n\n";
-   cin >> output;
-   if (output < 0)
-    cout << "Please follow the instructions mentioned above \n\n";
-    else
-      for (i = 1; i <= output; i++
-        cout << "Please enter the original sentence word by word without spaces: " << i << "\n";
-        cin >> c;
-        convert(c);
-        sentence = sentence + " " + c.erase(0,1) + c[0] + k;
-       cout << "Accoding to what you have entered, the suntence will be: \n " << sentence;
-   return 0;
-   }
+    string sentence, word = "", translation = "";                               
+    cout<<"Please enter the original sentence: ";                               
+    getline(cin, sentence);                                                   
+    for (unsigned int i=0; i<sentence.length(); i++) {                                     
+        if(sentence[i] == ' ')                                           
+            translation = translation + word.substr (1,string::npos)+ word[0] + "KPU ";   
+            word = "";                                                          
+          else
+              word = word + (char)toupper(sentence[i]);                          
+    }
+    translation = translation + word.substr (1,string::npos)+ word[0] + "KPU ";   
+    cout<<"\nTranslation: "<<translation;                                         
+    
+    return 0;
+}
 ```
 
 2. **What bug does the original code have?**
 
-  There should be curly brackets in the else statement just so that it can continue usingg the other code as a part of the program and not the else statement
+  There should be curly brackets in the else statement and the if statement just so that it can continue using the other code as a part of the program and not the else and if statements and also because the else statement wasn't working withouth the brackets.
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
@@ -332,33 +327,28 @@ By putting the curly brackets.
 
 ```
 #include <iostream>
-#include <string>
+
 using namespace std;
 
-void convert (string& c)
-{
-    for (int word = 0; word < c.length(); word++)
-        c[word] = toupper(c[word]);
-    }
 int main()
 {
-  int output, i; //i is used as an incriment
-  string c, sentence = "", k = "KPU";
-   cout << "Type the number of words your sentence is gonna have. \n\n";
-   cin >> output;
-   if (output < 0)
-    cout << "Please follow the instructions mentioned above \n\n";
-    else
-      for (i = 1; i <= output; i++)
-      {
-        cout << "Please enter the original sentence word by word without spaces: " << i << "\n";
-        cin >> c;
-        convert(c);
-        sentence = sentence + " " + c.erase(0,1) + c[0] + k;
-      }
-        cout << "Accoding to what you have entered, the suntence will be: \n " << sentence;
-   return 0;
-   }
+    string sentence, word = "", translation = "";                               
+    cout<<"Please enter the original sentence: ";                               
+    getline(cin, sentence);                                                   
+    for (unsigned int i=0; i<sentence.length(); i++) {                                     
+        if(sentence[i] == ' '){                                              
+            translation = translation + word.substr (1,string::npos)+ word[0] + "KPU ";   
+            word = "";                                                          
+        }
+        else{                                                                 
+            word = word + (char)toupper(sentence[i]);                          
+        }
+    }
+    translation = translation + word.substr (1,string::npos)+ word[0] + "KPU ";   
+    cout<<"\nTranslated: "<<translation;                                         
+    
+    return 0;
+}
 
 ```
 
