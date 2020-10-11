@@ -16,6 +16,7 @@ int main() {
     else
         cout << n << " is not a prime number.\n";
   }
+  return 0;
 }
 bool primeCheck(int n){
 bool prime = true;
