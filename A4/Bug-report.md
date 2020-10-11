@@ -107,28 +107,92 @@ int main(){
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
-code with bugs or code snippet with bug goes here
+#include <iostream>
+using namespace std;
+int main() {
+  int n;
+  cout << "What is the number you want to test for a prime number?\n";
+  cout << "Please enter a positive intiger\n";
+  cin >> n;
+  if (primeCheck(n))
+        cout << n << " is a prime number.";
+    else
+        cout << n << " is not a prime number.";
+    return 0;
+}
+bool primeCheck(int n){
+bool prime = true;
+if (n == 0 || n == 1){
+  prime = false;
+  }
+  if (n==2) {
+  prime = true;
+  }
+  for (int x = 2; x <= n / 2; ++x){
+    if (n % x ==0){
+    prime = false;
+    break;}
+    else if (n%x; x!=0){
+    prime = true;
+    break;}
+  }
+  return prime;
+}
 
 ```
 
 2. **What bug does the original code have?**
 
-  
+  I did not initialize the "primeCheck(int n)" in the world area of the code i.e. before the int main() function. 
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+I was not able to understand why there was this problem as I was constantly checking my function and wasnt able to figure it out and then I realized that the function has to be called before I initialize it.
+
 4. **How to correct the bug?**
+
+I had to add call the function so that it can be called in the main function.
 
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-bug-free code or code snippet goes here
-
+#include <iostream>
+using namespace std;
+bool primeCheck(int n);
+int main() {
+  int n;
+  cout << "What is the number you want to test for a prime number?\n";
+  cout << "Please enter a positive intiger\n";
+  cin >> n;
+  if (primeCheck(n))
+        cout << n << " is a prime number.";
+    else
+        cout << n << " is not a prime number.";
+    return 0;
+}
+bool primeCheck(int n){
+bool prime = true;
+if (n == 0 || n == 1){
+  prime = false;
+  }
+  if (n==2) {
+  prime = true;
+  }
+  for (int x = 2; x <= n / 2; ++x){
+    if (n % x ==0){
+    prime = false;
+    break;}
+    else if (n%x; x!=0){
+    prime = true;
+    break;}
+  }
+  return prime;
+}
 ```
 
 6. **What is the take-away message from this bug?**
 
----
+---I need to call all the functions before I initialize the function.
 
 # Bug 3
 
