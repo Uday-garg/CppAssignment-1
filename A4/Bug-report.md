@@ -198,7 +198,7 @@ if (n == 0 || n == 1){
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 bool primeCheck(int n);
@@ -250,7 +250,7 @@ Use a while loop instead.
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 bool primeCheck(int n);
