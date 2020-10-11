@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// This function basically takes 3 int inputs as (int[], int, int)
 void function(int arr_num[ ], int arr_size, int n)
 {
     for (int i = 0; i<arr_size; i++)
