@@ -30,7 +30,7 @@ int main(){
 
     cout << "Please enter a number : ";
     cin >> n;
-    cout << "The following program will give out all the numbers that are bugger than your chosen number." << endl;
+    cout << "The following program will give out all the numbers that are bigger than your chosen number." << endl;
     function(arr_num,arr_size,n);  
     return 0;
 }
