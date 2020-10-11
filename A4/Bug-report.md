@@ -99,7 +99,7 @@ int main(){
 
 6. **What is the take-away message from this bug?**
 
-The take away from this situation is that I need to pay more attention while I make statements so that I do not mix up programming languages. 
+    The take away from this situation is that I need to pay more attention while I make statements so that I do not mix up programming languages. 
 ---
 
 # Bug 2
