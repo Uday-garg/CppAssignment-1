@@ -57,7 +57,7 @@ I had to add the '[ ]' infront of the first int in the void function.
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 #include<iostream>
 
 using namespace std;
@@ -106,7 +106,7 @@ int main(){
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
@@ -155,7 +155,7 @@ I had to add call the function so that it can be called in the main function.
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 bool primeCheck(int n);
