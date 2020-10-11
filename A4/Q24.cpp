@@ -1,4 +1,3 @@
-  
 #include <iostream>
 using namespace std;
 bool primeCheck(int n);
@@ -12,9 +11,9 @@ int main() {
   cout << "Please enter a positive intiger\n";
   cin >> n;
   if (primeCheck(n))
-        cout << n << " is a prime number.\n";
+        cout << n << " is a prime number.\n\n\n";
     else
-        cout << n << " is not a prime number.\n";
+        cout << n << " is not a prime number.\n\n\n";
   }
   return 0;
 }
