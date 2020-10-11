@@ -1,16 +1,21 @@
+  
 #include <iostream>
 using namespace std;
 bool primeCheck(int n);
 int main() {
+  int r(0);
+  while (r < 2) {
+      r++;
+  cout << "This the test run number: -  "<< r << "\n";
   int n;
   cout << "What is the number you want to test for a prime number?\n";
   cout << "Please enter a positive intiger\n";
   cin >> n;
   if (primeCheck(n))
-        cout << n << " is a prime number.";
+        cout << n << " is a prime number.\n";
     else
-        cout << n << " is not a prime number.";
-    return 0;
+        cout << n << " is not a prime number.\n";
+  }
 }
 bool primeCheck(int n){
 bool prime = true;
