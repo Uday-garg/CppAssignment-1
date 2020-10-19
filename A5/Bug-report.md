@@ -46,7 +46,7 @@ return 0;
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -83,7 +83,7 @@ return 0;
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -137,7 +137,7 @@ I hust had to change the showArray(size, reverse); into showArray(reverse, size)
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -185,7 +185,7 @@ int *reverseArray(const int arr[], const int size){
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -235,7 +235,7 @@ int *reverseArray(const int arr[], const int size){
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
