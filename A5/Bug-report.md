@@ -210,7 +210,7 @@ int main(){
 }
 
 void showArray(const int arr[], int size){
-    for (unsigned i = 0; i < size; i++){
+    for (unsigned i = 0; i <= size; i++){
         cout << "Element [" << i+1 << "] : " << arr[i] << endl;
     }
     cout << "--------------------------------------------------------------\n";
@@ -218,7 +218,7 @@ void showArray(const int arr[], int size){
 
 int *reverseArray(const int arr[], const int size){
     int *reverseArr = new int [size];
-    for (unsigned i = 0; i < size; i++){
+    for (unsigned i = 0; i <= size; i++){
         *(reverseArr + i) = *( arr + size -1 -i);
     }
     return reverseArr;
@@ -227,11 +227,15 @@ int *reverseArray(const int arr[], const int size){
 
 2. **What bug does the original code have?**
 
-  
+  I put an <= sign instead of < in both the for loops as I wanted a complete comparison.
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+  I thought that I needed to make a complete comparison.
+
 4. **How to correct the bug?**
+
+  Just remove the = sign from the <= in the for loops.
 
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -276,3 +280,4 @@ int *reverseArray(const int arr[], const int size){
 ```
 
 6. **What is the take-away message from this bug?**
+  I just have to realize that when a code is initialized, it starts counting from 0 and not one so it won't be <= but it will be <.
