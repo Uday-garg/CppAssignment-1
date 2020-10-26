@@ -44,12 +44,13 @@ int main()
 	Payroll workers[7];
 	
 
-
+     cout << "Please make sure that the total number of hours doesn't exceed 60\n";
 	for (int x = 0; x < 7; x++)
 	{
 		double hour;
 		double rate;
 
+ 
     cout << "what is the number of hours worked by employee number " << x+1 << "?\n";
     cin >> hour;
     if (hour <= 60){
@@ -62,6 +63,9 @@ int main()
         cout << payDay.pay();
         cout << ".\n" <<"===================================\n";
         } 
+      else {
+        cout << "Please enter the total hours less than 60\n The program is skipping this employee. Please contact a manager to edit this.\n";
+      }
     }    
 
 	return 0;
