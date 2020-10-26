@@ -60,7 +60,7 @@ int main()
         Payroll payDay;
         payDay.setPayDay(hour, rate);
         cout << payDay.pay();
-        cout << "\n" <<"===================================\n";
+        cout << ".\n" <<"===================================\n";
         } 
     }    
 
