@@ -12,17 +12,14 @@ class Payroll
 	public:
 		Payroll()
 		{
-			hours = 0;
-			rate = 0;
+			double hours;
+			double rate;
 		}
-		void setHour(double x)
-		{
-			hours = x;
-		}
-		void setRate(double y)
-		{
-			rate = y;
-		}
+    void setPayDay(double pay, double time)
+    {
+        hours = time;
+        rate = pay;
+        }
 		int getHour()
 		{
 			return hours;
@@ -45,9 +42,6 @@ int main()
 
 
 	Payroll workers[7];
-
-	ifstream infile;
-	infile.open("payroll.dat");
 	
 
 
@@ -56,20 +50,19 @@ int main()
 		double hour;
 		double rate;
 
-		infile >> hour;
-		infile >> rate;
-		
-		workers[x].setHour(hour);
-		workers[x].setRate(rate);
-	}
+    cout << "what is the number of hours worked by employee number " << x+1 << "?\n";
+    cin >> hour;
+    if (hour <= 60){
+        cout << "What is the wage of that emolpyee?\n";
+        cin >> rate;   
 
-	infile.close();
-
-
-	for (int x = 0; x < 7; x++)
-	{
-		cout << "The gross pay of employee " << x + 1 << " is $" << workers[x].pay() << endl;
-	}
+        cout << "The gross pay of emplyee " << x+1 << " is $";
+        Payroll payDay;
+        payDay.setPayDay(hour, rate);
+        cout << payDay.pay();
+        cout << "\n" <<"===================================\n";
+        } 
+    }    
 
 	return 0;
 }
