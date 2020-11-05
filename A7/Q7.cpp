@@ -107,6 +107,7 @@ for (int i = 0; i < 2; i++){
 
  //input from function
  KPUstd1.setKpuStudent(stdName, stdNumber, stdAge, kpuStdMajor, kpuStdCampus, kpuStdYear);
+ //printing the function
  KPUstd1.PKpuStudent();
 }
 }
