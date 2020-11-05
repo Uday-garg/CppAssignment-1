@@ -87,6 +87,7 @@ string c, int year)
 };
 int main()
 {
+cout << "This program lets you enter the details of two students." << endl;
 for (int i = 0; i < 2; i++){
  KpuStudent KPUstd1;
  string stdName, stdNumber, kpuStdMajor, kpuStdCampus;
