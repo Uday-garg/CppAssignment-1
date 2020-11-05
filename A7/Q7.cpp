@@ -87,6 +87,10 @@ string c, int year)
 };
 int main()
 {
+cout << "An example of the function is here:\n";
+KpuStudent ks("Arnav", "Z8765", 19, "IT", "Online", 1);
+ //printing the function
+ ks.PKpuStudent();
 cout << "This program lets you enter the details of two students." << endl;
 for (int i = 0; i < 2; i++){
  KpuStudent KPUstd1;
