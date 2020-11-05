@@ -3,36 +3,36 @@ using namespace std;
 class Student
 {
  protected:
- string student_name;
- string student_number;
+ string studentName;
+ string studentNumber;
  int age;
  public:
  Student(){}
  Student(string name, string number, int age)
  {
- this -> student_name = name;
- this -> student_number = number;
+ this -> studentName = name;
+ this -> studentNumber = number;
  this -> age = age;
  }
  void setStudent(string name, string number, int age)
  {
- this -> student_name = name;
- this -> student_number = number;
+ this -> studentName = name;
+ this -> studentNumber = number;
  this -> age = age;
  }
  void printStudent()
  {
- cout<<"Student Name: "<<student_name<<endl;
- cout<<"Student Number: "<<student_number<<endl;
+ cout<<"Student Name: "<<studentName<<endl;
+ cout<<"Student Number: "<<studentNumber<<endl;
  cout<<"Student Age: "<<age<<endl;
  }
  string getStudentName()
  {
- return student_name;
+ return studentName;
  }
  string getStudentNumber()
  {
- return student_number;
+ return studentNumber;
  }
  int getStudentAge()
  {
@@ -62,12 +62,12 @@ string c, int year)
  this -> year = year;
  setStudent(name, number, age);
  }
- void printKpuStudent()
+ void PKpuStudent()	// print function for kpu student
  {
  cout<<"================== Details for KpuStudent =================="<<endl;
  printStudent();
  cout<<"Major: "<<major<<endl;
- cout<<"campus: "<<campus<<endl;
+ cout<<"Campus: "<<campus<<endl;
  cout<<"Year: "<<year<<endl;
  cout<<"============================ END ==========================="<<endl;
  }
@@ -88,25 +88,26 @@ string c, int year)
 int main()
 {
 for (int i = 0; i < 2; i++){
- KpuStudent ks2;
- string sname, snumber, ksmajor, kscampus;
- int sage, ksyear;
+ KpuStudent KPUstd1;
+ string stdName, stdNumber, kpuStdMajor, kpuStdCampus;
+ int stdAge, kpuStdYear;
 
  cout<<"Enter Your Name: ";
- cin>>sname; 
+ cin>>stdName; 
  cout<<"Enter Your Student Number: ";
- cin>>snumber;
+ cin>>stdNumber;
  cout<<"Enter Your Age: ";
- cin>>sage;
+ cin>>stdAge;
  cout<<"Enter Your Major: ";
- cin>>ksmajor;
+ cin>>kpuStdMajor;
  cout<<"Enter Your Campus: ";
- cin>>kscampus;
+ cin>>kpuStdCampus;
  cout<<"Enter Your Year: ";
- cin>>ksyear;
+ cin>>kpuStdYear;
 
  //input from function
- ks2.setKpuStudent(sname, snumber, sage, ksmajor, kscampus, ksyear);
- ks2.printKpuStudent();
+ KPUstd1.setKpuStudent(stdName, stdNumber, stdAge, kpuStdMajor, kpuStdCampus, kpuStdYear);
+ KPUstd1.PKpuStudent();
 }
 }
+
