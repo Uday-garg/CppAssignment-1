@@ -94,7 +94,7 @@ KPUstd1Student ks("Arnav", "Z8765", 19, "IT", "Online", 1);
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 KpuStudent ks("Arnav", "Z8765", 19, "IT", "Online", 1);
  //printing the function
  ks.PKpuStudent();
