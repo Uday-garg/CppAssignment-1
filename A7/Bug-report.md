@@ -108,24 +108,29 @@ KpuStudent ks("Arnav", "Z8765", 19, "IT", "Online", 1);
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
-code with bugs or code snippet with bug goes here
-
+```cpp
+cout<<"Enter Your Name: ";
+getline (cin, sname);
 ```
 
 2. **What bug does the original code have?**
 
-  
+  In my int main() function I have the inputs for student but here I added it as getline unlike any other input.
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+I thought that it would make it easier to allocate a line for it and let me add more than one names on re-runs.
+
 4. **How to correct the bug?**
+
+Just do the normal cin << "";
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
-bug-free code or code snippet goes here
-
+```cpp
+cout<<"Enter Your Name: ";
+ cin>>stdName; 
 ```
 
 6. **What is the take-away message from this bug?**
+ Debugging is an important step.
