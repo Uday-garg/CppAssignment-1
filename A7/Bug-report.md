@@ -3,69 +3,106 @@
 1. **The incorrect original code or code snippit that you wrote:**
 
 ``` cpp
-//code with bugs or code snippet with bug goes here
-
-//sample code
-
-// Online C++ compiler to run C++ online.
-// Write C++ code in this online editor and run it.
-
 #include <iostream>
-
-int main() {
-    std:cout << "Hello World!";
-  
-  return 0;
-}
+using namespace std;
+class Student
+{
+ int age;
+ public:
+ string studentName;
+ string studentNumber;
+ Student(){}
+ Student(string name, string number, int age)
+ {
+ this -> studentName = name;
+ this -> studentNumber = number;
+ this -> age = age;
+ }
+ void setStudent(string name, string number, int age)
+ {
+ this -> studentName = name;
+ this -> studentNumber = number;
+ this -> age = age;
+ }
 
 ```
 
 2. **What bug does the original code have?**
 
-  
+  I put all the strings under public whereas it should have been in the protected head.
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+    I thought that putting it in public would make it easier for me to access it later when I needed it.
+
 4. **How to correct the bug?**
+
+    I just had to put it in the protected head.
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
-bug-free code or code snippet goes here
-
+```cpp
+#include <iostream>
+using namespace std;
+class Student
+{
+ protected:
+ string studentName;
+ string studentNumber;
+ int age;
+ public:
+ Student(){}
+ Student(string name, string number, int age)
+ {
+ this -> studentName = name;
+ this -> studentNumber = number;
+ this -> age = age;
+ }
+ void setStudent(string name, string number, int age)
+ {
+ this -> studentName = name;
+ this -> studentNumber = number;
+ this -> age = age;
+ }
 ```
 
 6. **What is the take-away message from this bug?**
 
----
+--- Always make sure that my consepts are clear and I know where the protected files are to be used.
 
 # Bug 2
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
-code with bugs or code snippet with bug goes here
-
+```cpp
+KPUstd1Student ks("Arnav", "Z8765", 19, "IT", "Online", 1);
+ //printing the function
+ KPUstd1.PKpuStudent();
 ```
 
 2. **What bug does the original code have?**
 
-  
+    I wrothe this piece of code later so, I did not was just adding a example case and hence when I wrote it I used the class variables before they were actually called in the int   main() function
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+    This I think was just an honest mistake as I needed to call the variables after declaring them.
+
 4. **How to correct the bug?**
+
+    Just declare the variables before using them.
 
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-bug-free code or code snippet goes here
-
+KpuStudent ks("Arnav", "Z8765", 19, "IT", "Online", 1);
+ //printing the function
+ ks.PKpuStudent();
 ```
 
 6. **What is the take-away message from this bug?**
 
----
+--- The take away is to always double check my code.
 
 # Bug 3
 
