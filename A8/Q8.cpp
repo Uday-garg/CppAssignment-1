@@ -102,17 +102,17 @@ class HogwartsStudent : public Student {
 int main() {
     
     // create 3 student objects
-    Student student = Student("Arnav", "2020");
-    KpuStudent kpuStudent = KpuStudent("Arnav", "2020", "Surrey");
-    HogwartsStudent hogwartsStudent = HogwartsStudent("Arnav", "2020", "Gryffindor");
+    Student std = Student("Arnav", "2020");
+    KpuStudent Kstd = KpuStudent("Arnav", "2020", "Surrey");
+    HogwartsStudent Hstd = HogwartsStudent("Arnav", "2020", "Gryffindor");
     
     // Student array (pointer)
     Student * students[3];
     
     // assign address of above created student objects
-    students[0] = &student;
-    students[1] = &kpuStudent;
-    students[2] = &hogwartsStudent;
+    students[0] = &std;
+    students[1] = &Kstd;
+    students[2] = &Hstd;
     
     // loop through the array and call print() function
     for(int i = 0; i < 3; i++) {
