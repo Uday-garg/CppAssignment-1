@@ -113,5 +113,5 @@ Student std = Student("Arnav", "2020");
 ```
 
 6. **What is the take-away message from this bug?**
-    
-       Debugging always pays off even when the code works.
+        
+        Debugging always pays off even when the code works.
