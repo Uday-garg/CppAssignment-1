@@ -102,9 +102,9 @@ class HogwartsStudent : public Student {
 int main() {
     
     // create 3 student objects
-    Student student = Student("Student 1", "2020");
-    KpuStudent kpuStudent = KpuStudent("Student 1", "2020", "Surrey");
-    HogwartsStudent hogwartsStudent = HogwartsStudent("Student 1", "2020", "Hufflepuff");
+    Student student = Student("Arnav", "2020");
+    KpuStudent kpuStudent = KpuStudent("Arnav", "2020", "Surrey");
+    HogwartsStudent hogwartsStudent = HogwartsStudent("Arnav", "2020", "Gryffindor");
     
     // Student array (pointer)
     Student * students[3];
