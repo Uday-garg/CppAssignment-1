@@ -8,12 +8,15 @@
 ```
 
 2. **What bug does the original code have?**
+    
     I used pointers for ptr and max     
   
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
+   
     I thought that pointers would be a good idea as they point to the memory location
 4. **How to correct the bug?**
+        
         Just remove the pointers
 5. **The corresponding bug-free code or code snippet is:**
 
@@ -23,7 +26,8 @@
 ```
 
 6. **What is the take-away message from this bug?**
-    I should always debug my code
+   
+   I should always debug my code
 ---
 
 # Bug 2
