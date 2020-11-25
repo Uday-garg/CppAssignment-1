@@ -34,29 +34,33 @@
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
-code with bugs or code snippet with bug goes here
-
+```cpp
+  if(prices[i]>=5000 || prices[i]<0)
+            throw "stock price is not a valid!";
 ```
 
 2. **What bug does the original code have?**
 
-  
+  I made prices[i]>=5000 but the question says otherwise.
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+ Just misread the question.
+
 4. **How to correct the bug?**
+
+prices[i]>5000 just had to do this.
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
-bug-free code or code snippet goes here
-
+```cpp
+       if(prices[i]>5000 || prices[i]<0)
+        throw "stock price is not a valid!";
 ```
 
 6. **What is the take-away message from this bug?**
 
----
+---  I have to read the question more carefully
 
 # Bug 3
 
