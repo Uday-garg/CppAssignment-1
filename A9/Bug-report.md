@@ -16,8 +16,8 @@
    
     I thought that pointers would be a good idea as they point to the memory location
 4. **How to correct the bug?**
-        
-        Just remove the pointers
+    
+    Just remove the pointers
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
