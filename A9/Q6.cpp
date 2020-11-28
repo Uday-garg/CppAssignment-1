@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 //class 
-class Stockprices
+class Price_stocks
 {
     public:
     int prices[7];//prices array 
-    Stockprices(int arr[])//constructor that accepts a Stockprices array as argument 
+    Price_stocks(int arr[])//constructor that accepts a stock price array as argument 
     {
         for(int i=0;i<7;++i)
                prices[i] = arr[i];
@@ -26,14 +26,14 @@ class Stockprices
     }
 };
 int main()
-{ //array containing Stockprices 
+{ //array containing stock price 
     int arr[7]={2000,3100,300,700,4070,3456,867};
-    Stockprices obj(arr);//create object and constructor with argument
+    Price_stocks obj(arr);//create object and constructor with argument
     
    //exception handling  
     try {
-        int ans=obj.average();
-    cout<<ans;
+        int answer=obj.average();
+    cout<<answer;
       
    } catch (const char* error_msg) {
      cerr << error_msg << endl;
