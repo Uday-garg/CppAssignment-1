@@ -67,7 +67,7 @@ while(finish && n>0)
 
 1. **The incorrect original code or code snippit that you wrote:**
 
-```
+```cpp
 finish.close;
 ```
 
@@ -85,7 +85,7 @@ finish.close;
 
 5. **The corresponding bug-free code or code snippet is:**
 
-```
+```cpp
 finish.close();
 ```
 
