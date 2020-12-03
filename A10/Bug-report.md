@@ -68,23 +68,27 @@ while(finish && n>0)
 1. **The incorrect original code or code snippit that you wrote:**
 
 ```
-code with bugs or code snippet with bug goes here
-
+finish.close;
 ```
 
 2. **What bug does the original code have?**
 
-  
+  I didn't put the ()
 
 3. **What misunderstanding of C++ concepts lead you to this incorrect code?**
 
+  I thought it did not require it.
+
 4. **How to correct the bug?**
+
+  Just need to add ()
 
 5. **The corresponding bug-free code or code snippet is:**
 
 ```
-bug-free code or code snippet goes here
-
+finish.close();
 ```
 
 6. **What is the take-away message from this bug?**
+
+--- I need to revisit the consepts 
