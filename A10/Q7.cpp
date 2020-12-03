@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 /*make a object*/
-ifstream fin;
+ifstream finish;
 /*declare the variable*/
 string line,file;
 int n;
@@ -15,16 +15,16 @@ cin>>file;
 cout<<"Enter the number of line:";
 cin>>n;
 /*open a file*/
-fin.open(file);
-while(fin && n>0)
+finish.open(file);
+while(finish && n>0)
 {
 // Read a Line from file
-getline(fin, line);
+getline(finish, line);
 // Write line in Console
 cout << line << endl;
 n--;
 }
-fin.close();
+finish.close();
 
 if(n!=0)
 
